@@ -3,7 +3,10 @@ agenda = {}
 
 def agregar_contacto():
     '''Agregar un contacto'''
-	
+    nombre = input('Nombre del nuevo contacto: ')
+    numero = int(input('Numero del nuevo contacto: '))
+    agenda[nombre] = numero
+    print('Contacto %s agregado' % nombre)
 
 def remover_contacto():
     '''Remover contacto'''
