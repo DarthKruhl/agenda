@@ -8,8 +8,16 @@ def agregar_contacto():
     agenda[nombre] = numero
     print('Contacto %s agregado' % nombre)
 
+
 def remover_contacto():
     '''Remover contacto'''
+    nombre = input('Nombre del contacto: ')
+    try:
+        del (agenda[nombre])
+    except KeyError:
+        'Ese contacto no existe'
+    else:
+        print('Contacto %s eliminado',nombre)
 
 
 def actualizar_contacto():
